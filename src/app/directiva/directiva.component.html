@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-6 offset-3">
+    <h3 class="text-primary">Listado NG for</h3>
+
+    <button type="button" (click)="setHabilitar()"
+            class="btn btn-outline-danger my-3">{{ habilitar == true ? 'Ocultar' : 'Mostrar' }}</button>
+
+    <div class="card" *ngIf="habilitar == true">
+      <div class="list-group">
+        <div class="list-group-item" *ngFor="let item of listado">{{ item }}</div>
+      </div>
+    </div>
+
+  </div>
+</div>
