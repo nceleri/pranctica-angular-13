@@ -12,7 +12,11 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("hola perro");
+
+    const suma = (a: number, b: number) => a + b;
+
+    console.log (suma(3,4));
+
   }
 
 }
